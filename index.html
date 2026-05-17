@@ -2,11 +2,179 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - Cauê Medeiros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHUB - Caue Medeiros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #161b22;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        .about-section {
+            background-color: #161b22;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            color: #f0f6fc;
+            margin-bottom: 1rem;
+        }
+
+        .grid-projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #58a6ff;
+        }
+
+        .card h3 {
+            color: #58a6ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #8b949e;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #21262d;
+            color: #c9d1d9;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: 1px solid #f0f6fc1a;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+        }
+
+        footer {
+            background-color: #161b22;
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá! Eu sou Cauê Medeiros de Paula</h1>
-    <p>Estudante de Engenharia de Software no CEUB.</p>
-    <a href="https://www.linkedin.com/in/gaue-medeiros-66a7973b1">Visite meu LinkedIn</a>
+
+    <header>
+        <h1>PortfolioHUB</h1>
+        <p>Repositório Centralizado de Versionamento & Projetos</p>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>Estudante: Caue Medeiros de Paula</h2>
+            <p>Graduando em <strong>Engenharia de Software no CEUB</strong>. Este ecossistema foi desenvolvido para a entrega do Desafio Intermediário, aplicando conceitos de Git, versionamento estruturado, organização de diretórios e publicação contínua.</p>
+        </section>
+
+        <h2 style="color: #f0f6fc; margin-bottom: 1rem;">Pastas do Repositório</h2>
+        
+        <div class="grid-projetos">
+            <div class="card">
+                <div>
+                    <h3>📁 projetos-academicos</h3>
+                    <p>Diretório destinado ao armazenamento de códigos, listas de exercícios, trabalhos práticos e projetos desenvolvidos ao longo das disciplinas da faculdade no CEUB.</p>
+                </div>
+                <a href="https://github.com/caue007medeiros-coder/Portfolio-EngSoftware/tree/main/projetos-academicos" class="btn" target="_blank">Acessar Pasta</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>📁 projetos-pessoais</h3>
+                    <p>Espaço focado em projetos autorais, testes de novas tecnologias, ferramentas e códigos criados fora do ambiente acadêmico para evolução profissional.</p>
+                </div>
+                <a href="https://github.com/caue007medeiros-coder/Portfolio-EngSoftware/tree/main/projetos-pessoais" class="btn" target="_blank">Acessar Pasta</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>📁 documentacao</h3>
+                    <p>Pasta centralizada para guardar arquivos complementares, esquemas de arquitetura, slides de apresentações e anotações técnicas importantes.</p>
+                </div>
+                <a href="https://github.com/caue007medeiros-coder/Portfolio-EngSoftware/tree/main/documentacao" class="btn" target="_blank">Acessar Pasta</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Caue Medeiros de Paula &copy; 2026 | Conecte-se comigo no <a href="https://www.linkedin.com/in/gaue-medeiros-66a7973b1" target="_blank">LinkedIn</a></p>
+    </footer>
+
 </body>
 </html>
